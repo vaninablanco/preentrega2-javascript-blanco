@@ -21,6 +21,12 @@ let filterCategory = "• 03 → por Categoría"
 let filter = parseInt(prompt("Bienvenido a 🚲 BICICLETERÍA SCARANO 🚲\n\nPor favor, indique que como desea realizar su búsqueda de bicicleta:\n\n" + filterPrice + "\n" + filterModel  + "\n" + filterCategory));
 console.log(filter)
 
+// declaración de función - si tipean una opción mal
+function escape(){
+    alert("Por favor, presione ESC para volver a las opciones.")
+    console.log("Por favor, presione ESC para volver a las opciones.")    
+}
+
 // aplicación de filtros
 if (filter === 1) { // filtro por precio, se usará "filter", para filtrar los rangos     
     let amount = parseInt(prompt("Su búsqueda será: " + filterPrice + "\n\nIndique el rango deseado:\n• 01 - $50.000 a $100.000 \n• 02 - $100.000 a $200.000")); 
@@ -42,8 +48,7 @@ if (filter === 1) { // filtro por precio, se usará "filter", para filtrar los r
     console.log(byPrice);
     alert(message);
     }else{
-        alert("Por favor, presione ESC para volver a las opciones.")
-        console.log("Por favor, presione ESC para volver a las opciones.")
+        escape()
     }
 }else if (filter === 2) { // filtro por modelo, se usará "find", por ser un valor único que no se repite     
     let byModel = prompt("Su búsqueda será: " + filterModel + "\n\nIndique el modelo de bicicleta que desea encontrar:");
@@ -62,7 +67,6 @@ if (filter === 1) { // filtro por precio, se usará "filter", para filtrar los r
         message = message + " " + bicycle.category + " - '" + bicycle.brand + " " + bicycle.model.toUpperCase() + "'\n"
         })
     alert ("• Los modelos por categoría son:\n\n" + message)
-}else{ // si poné otro número en el inicio     
-    alert("Por favor, presione ESC para volver a las opciones.")
-    console.log("Por favor, presione ESC para volver a las opciones.")
+}else{      
+    escape()
 } 
