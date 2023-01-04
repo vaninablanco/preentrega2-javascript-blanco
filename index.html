@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- idioma guoryop samu -->
+<html lang="es"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <!-- tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- título -->
     <title>• Bienvenidos • Bicicletería Scarano •</title>
+    <meta name="description" content="Bicis para todas las edades, patines artísticos y de carrito. Respuestos y accesorios para todos los rodados.">
+    <meta name="keyword" content="bicicletas, BMX, patines, skates, monopatines, rollers, accesorios, repuestos, herramientas">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    
 </head>
-<body>
+
+<body class="container">
+
+    <h1 class="text-center">Encontrá lo que buscás</h1>
+    <hr>
+
+    <div id="contenedorProductos" class="row"></div>
+
+    <!-- carrito -->
+    <h2>Carrito de compras</h2>
+    <h3>Total de la compra <span id="total"></span></h3>
+    <button class="btn colorBoton" id="Ver carrito">Ver carrito</button>
+    <button class="btn colorBoton" id="Vaciar carrito">Vaciar carrito</button>
+
+
+    <!-- JS BT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
     <script src="./javascript/main.js"></script>
 </body>
+
 </html>

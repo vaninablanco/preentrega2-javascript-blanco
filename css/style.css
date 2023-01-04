@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body*/
+body{
+    font-family:'Roboto', sans-serif; 
+    background-color: white;   
+    height: 100vh; 
+}
+
+#productContainer{
+    background-color: red;
+    color: white;
+}
+
+.h2 {
+    color:red;
+}
+
+.colorBoton {
+    color: white;
+    background-color: #fd7e14;
+}
+
+.colorBoton:hover {
+    color: #fd7e14;
+    background-color: white ;
+}
